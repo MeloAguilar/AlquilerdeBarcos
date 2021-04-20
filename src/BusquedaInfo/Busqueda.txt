@@ -1,0 +1,80 @@
+    /**
+     * Son procesos que sirven para normalizar quien hace cada cosa
+     * en cada momento y como debe realizarse.
+     *
+     * Incluye descripción, escenario de uso, solución concreta, las consecuencias de utilizar este patrón,
+     * ejemplos de implementación y una lista de patrones relacionados.
+     *
+     * GRASP es el acrónimo de General Responsibility Assignment
+     * Software Patterns. Estos son una serie de pautas que nos
+     * guian a la hora de encontrar patrones de diseño.
+     *
+     *  Los patrones son los siguientes:
+     *      Bajo acoplamiento: Deben haber pocas dependencias entre clases,
+     *      por lo que lo mejor es utilizar diagramas UML.
+     *
+     *      Alta Cohesión: Cada elemento de nuestro diseño debe realizar una labor única
+     *      dentro del sistema.
+     *
+     *      Experto: Una clase debe contener toda la información necesaria para
+     *      realizar el proceso que se le ha encomendado.
+     *
+     *      Creador: Una clase B solo puede crear un objeto de la clase A cuando
+     *
+     *              - B contenga A.
+     *              - B es una agregación de A.
+     *              - B almacena a A.
+     *              - B tiene los datos de inicialización de A.
+     *
+     *      Controlador: Asignar la responsabilidad de controlar el flujo de
+     *      eventos del sistema a las clases específicas. No se le debe dar más carga al controlador
+     *      de la que ya tiene.
+     *
+     *      Polimorfismo: Cuando identificamos variaciones en un comportamiento, asignar la
+     *      interfaz al comportamiento y utilizar polimorfismo  para
+     *      implementar los comportamientos alternativos.
+     *
+     *      Fabricación Pura: Cuando los problemas se complican, construir clases que se encarguen
+     *      de construir los objetos adecuados en cada momento.
+     *
+     *      Indirección: Crear clases intermedias para desacoplar clientes de servicio y servicios.
+     *
+     *      No hables con extraños xD: Un método, solamente invocará a métodos de:
+     *
+     *              - De si mismo (this).
+     *              - De su área de parámetros.
+     *              - Un objeto creado en su propio ámbito.
+     *              - (los demás los doy por incluidos).
+     *
+     *
+     *
+     *
+     *******************************************************************************************************************
+     *  Ambas fueron introducidas en la versión 8 del JDK de Java.
+     *******************************************************************************************************************
+     *
+     *  Los Streams en java son un nuevo modelo de datos que nos permite tratar las colecciones
+     *  como si de etapas de un proceso ETL (“Extract Transform and Load” o
+     *  proceso de esxtracción, transformación y carga de datos) se tratara.
+     *  Esto nos permite utilizar las funciones Map y Reduce tan comunes en esos procesos,
+     *  especialmente en la etapa de transformación.
+     *
+     *
+     *******************************************************************************************************************
+     *
+     * Las expresiones lambda son funciones que no necesitan clase.
+     *
+     * El operador lambda (->) separa la declaración de parámetros de la declaración del cuerpo de la función.
+     *
+     *      Parámetros:
+     *          -Cuando se tiene un solo parámetro no es necesario utilizar los paréntesis.
+     *
+     *          -Cuando no se tienen parámetros, o cuando se tienen dos o más, es necesario utilizar paréntesis.
+     *
+     *      Cuerpo de lambda:
+     *          -Cuando el cuerpo de la expresión lambda tiene una única línea no es necesario utilizar las
+     *          llaves y no necesitan especificar la clausula return en el caso de que deban devolver valores.
+     *
+     *          -Cuando el cuerpo de la expresión lambda tiene más de una línea se hace necesario utilizar
+     *          las llaves y es necesario incluir la clausula return en el caso de que la función deba devolver un valor .
+     */
