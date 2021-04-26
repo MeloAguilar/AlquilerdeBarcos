@@ -1,7 +1,7 @@
 package Ejercicio1.Menu;
 
 import Ejercicio1.Clases.Alquiler;
-import Ejercicio1.Clases.Barco.Barco;
+import Ejercicio1.Clases.Barco.*;
 import Ejercicio1.Clases.Cliente.Cliente;
 
 import java.time.LocalDate;

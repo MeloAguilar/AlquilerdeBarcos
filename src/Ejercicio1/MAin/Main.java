@@ -5,10 +5,9 @@ import Ejercicio1.Clases.Barco.Barco;
 import Ejercicio1.Clases.Barco.BarcoConMotor;
 import Ejercicio1.Clases.Barco.BarcoDeVela;
 import Ejercicio1.Clases.Barco.Yate;
-import Ejercicio1.Clases.Cliente.Cliente;
-import Ejercicio1.Menu.Menu;
+import Ejercicio1.Clases.Cliente.*;
+import Ejercicio1.Menu.*;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.ArrayList;
 

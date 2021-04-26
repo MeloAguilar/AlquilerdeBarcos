@@ -1,6 +1,8 @@
 package Ejercicio1.Clases.Cliente;
 
-public class Cliente {
+import Ejercicio1.Interfaces.PersonaImp;
+
+public class Cliente implements PersonaImp {
 
     private String nombre;
     private String apellidos;

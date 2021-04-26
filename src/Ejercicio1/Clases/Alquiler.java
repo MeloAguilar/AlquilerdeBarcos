@@ -1,7 +1,7 @@
 package Ejercicio1.Clases;
 
-import Ejercicio1.Clases.Barco.Barco;
-import Ejercicio1.Clases.Barco.BarcoDeVela;
+
+import Ejercicio1.Clases.Barco.*;
 import Ejercicio1.Clases.Cliente.Cliente;
 
 import java.time.LocalDate;
@@ -57,26 +57,27 @@ public class Alquiler {
 
     /**
      * Método que devuelve los días entre la fecha de inicio del alquiler y la fecha de fin
+     *
      * @return días entre fechaInicioAlquiler y fechaFinAlquiler.
      */
-    public int getTiempoDeAlquiler(){
-        return (int)ChronoUnit.DAYS.between (fechaInicioAlquiler,fechaFinAlquiler);
+    public int getTiempoDeAlquiler() {
+        return (int) ChronoUnit.DAYS.between(fechaInicioAlquiler, fechaFinAlquiler);
     }
 
-    public double getCalculoAlquiler(){
+    public double getCalculoAlquiler() {
         double alquiler = 0;
-        alquiler = this.barco.calcularModulo ();
+        alquiler = this.barco.calcularModulo();
         return alquiler;
     }
 
     @Override
     public String toString() {
         return "Alquiler{\n**********************************************************" +
-                "\nBarco: " + barco.getMatricula () +
-                "\nCliente: " + cliente.getDni () +
+                "\nBarco: " + barco.getMatricula() +
+                "\nCliente: " + cliente.getDni() +
                 "\nFecha de Inicio del Alquiler: " + fechaInicioAlquiler +
                 "\nFecha de Fin del Alquiler: " + fechaFinAlquiler +
-                "\nPrecio total del Alquiler: " + this.getCalculoAlquiler ()+ "€"+
+                "\nPrecio total del Alquiler: " + this.getCalculoAlquiler() + "€" +
                 "\n**********************************************************";
     }
 }
